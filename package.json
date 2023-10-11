@@ -19,8 +19,17 @@
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mohamed Ali Naaoui",
   "license": "ISC",
-  "description": "",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medalinaaoui/heyThere-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/medalinaaoui/heyThere-api/issues"
+  },
+  "homepage": "https://github.com/medalinaaoui/heyThere-api#readme",
+  "description": ""
 }

@@ -1,4 +1,4 @@
-import express, { json } from "express";
+import express from "express";
 import usersRouter from "./routes/users/users.js";
 import postsRouter from "./routes/posts/posts.js";
 import userPostsRouter from "./routes/posts/userPosts.js";
