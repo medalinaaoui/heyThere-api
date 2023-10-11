@@ -4,7 +4,6 @@ import jwt from "jsonwebtoken";
 import env from "../config/environmentVariables.js";
 //cookie
 const loginController = (req, res) => {
-  // const { username, password } = req.body;
   const q =
     "SELECT users.*, GROUP_CONCAT(DISTINCT post.id) AS posts, GROUP_CONCAT(DISTINCT comments.id) AS comments FROM users LEFT JOIN post ON users.id = post.user_id LEFT JOIN comments ON users.id = comments.user_id WHERE users.username = ? GROUP BY users.id";
   db.query(q, [req.body.username], function (err, results) {
