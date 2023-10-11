@@ -73,6 +73,6 @@ app.use("/api/comments", commentsRouter);
 app.use("/api/sentFollow", sentFollowRouter);
 
 const PORT = 8800;
-app.listen(PORT, (err) => {
+app.listen(process.env.PORT || PORT, (err) => {
   if (!err) console.log(`server running on port ${PORT}`);
 });
